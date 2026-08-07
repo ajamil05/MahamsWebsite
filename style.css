@@ -173,3 +173,27 @@ nav ul{flex-wrap:wrap;justify-content:center}
 
 .card,.revohub-box,.timeline-item,.topics li{border:1px solid rgba(0,200,83,.25)}
 .btn,.contact-links a{box-shadow:0 0 20px rgba(0,200,83,.25)}
+
+
+body{color:#69F0AE;}
+h1,h2,h3,.logo{
+color:#00FF7F !important;
+text-shadow:0 0 8px rgba(0,255,127,.35),0 0 20px rgba(0,200,83,.25);
+}
+p,li,span,a{
+color:#7CFFB2 !important;
+}
+nav a:hover,.timeline-item span{
+color:#00FF7F !important;
+}
+section h2:after{
+background:#00FF7F !important;
+box-shadow:0 0 10px rgba(0,255,127,.6);
+}
+.btn,.contact-links a{
+color:#050505 !important;
+font-weight:700;
+}
+.card h3{
+color:#00FF7F !important;
+}

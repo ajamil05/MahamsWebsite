@@ -96,8 +96,8 @@ header{
 }
 
 .profile img{
-    width: min(293px, 40vw);
-    aspect-ratio: 1 / 1;
+     width: 293px;
+    height: 293px;
     border-radius: 50%;
     object-fit: cover;
 }

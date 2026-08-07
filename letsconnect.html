@@ -248,7 +248,143 @@ section p{
 /* CONTACT */
 
 #contact{
-    padding:0;
+    padding:80px 8% 100px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+#contact h2{
+    font-size:2.3rem;
+    color:var(--accent);
+    margin-bottom:20px;
+}
+
+#contact h2:after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:var(--accent);
+    margin-top:10px;
+    border-radius:2px;
+}
+
+#contact > div > p{
+    color:var(--muted);
+    margin-bottom:28px;
+}
+
+.connect-links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.connect-links a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--surface);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:12px;
+    padding:14px 18px;
+    font-weight:600;
+    color:var(--text);
+    box-shadow:var(--shadow);
+    transition:.25s;
+}
+
+.connect-links a:hover{
+    transform:translateY(-3px);
+    border-color:var(--accent);
+}
+
+.connect-links svg{
+    width:20px;
+    height:20px;
+    stroke:var(--accent);
+    flex-shrink:0;
+}
+
+/* FORM */
+
+form{
+    background:var(--surface);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:32px;
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+form label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:var(--primary);
+    font-size:.9rem;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px 14px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.2);
+    background:#0d0d0d;
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    font-size:.95rem;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:none;
+    border-color:var(--accent);
+}
+
+form textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.send-btn{
+    align-self:flex-start;
+    padding:14px 32px;
+    border:none;
+    border-radius:999px;
+    background:linear-gradient(135deg,#444,#777);
+    color:#050505;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.25s;
+}
+
+.send-btn:hover{
+    transform:translateY(-3px);
+}
+
+.fallback{
+    font-size:.85rem;
+    color:var(--muted);
+    margin-top:4px;
+}
+
+.fallback a{
+    color:var(--accent);
+    text-decoration:underline;
+}
+
+@media(max-width:900px){
+    #contact{
+        grid-template-columns:1fr;
+        padding:60px 24px 80px;
+    }
 }
 
 /* FOOTER */
@@ -305,7 +441,7 @@ footer{
     <h2>Let's <em>Connect</em></h2>
     <p>Interested in workforce intelligence, AI transformation, or
        future-ready organisations? Submitting this form drafts an email
-       to       <a href="mailto:mahamspeaks@gmail.com?subject=Speaking%20Inquiry%20%2F%20Partnership">mahamspeaks@gmail.com>.</p>
+       to       <a href="mailto:mahamspeaks@gmail.com?subject=Speaking%20Inquiry%20%2F%20Partnership">mahamspeaks@gmail.com</a>.</p>
     <div class="connect-links">
       <a href="mailto:mahamspeaks@gmail.com?subject=Speaking%20Inquiry%20%2F%20Partnership">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>

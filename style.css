@@ -96,10 +96,11 @@ header{
 }
 
 .profile img{
-     width: 293px;
-    height: 293px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* fills the circle, crops excess instead of squishing */
+    object-position: center top; /* nudge this if the face gets cropped oddly */
+    display: block;
 }
 
 /* BUTTONS */

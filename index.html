@@ -400,7 +400,7 @@ Preparing Organisations for AI Transformation
   <div>
     <h2>Let's <em>Connect</em></h2>
     <p>Speaking inquiries, partnerships, and collaborations. Submitting this form drafts an email to
-       to <a href="mahamspeaks@gmail.com">mahamspeaks@gmail.com</a>.</p>
+       <a href="mailto:mahamspeaks@gmail.com">mahamspeaks@gmail.com</a>.</p>
     <div class="connect-links">
       <a href="mailto:mahamspeaks@gmail.com?subject=Speaking%20Inquiry%20%2F%20Partnership">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
@@ -416,7 +416,7 @@ Preparing Organisations for AI Transformation
       </a>
     </div>
   </div>
-  <form>
+  <form id="contact-form">
     <div>
       <label for="name">Name</label>
       <input id="name" type="text" placeholder="Your name">
@@ -430,7 +430,7 @@ Preparing Organisations for AI Transformation
       <textarea id="message" placeholder="Tell me a little about your event / partnership / request"></textarea>
     </div>
     <button type="submit" class="send-btn">SEND MESSAGE</button>
-    <p class="fallback">Prefer direct email? <a href="mailto:hello@revohub.ca">Open your email composer</a>.</p>
+    <p class="fallback">Prefer direct email? <a href="mailto:mahamspeaks@gmail.com">Open your email composer</a>.</p>
   </form>
 </section>
 
@@ -449,6 +449,26 @@ Preparing Organisations for AI Transformation
 
 
 <script src="script.js"></script>
+<script>
+  // Contact form has no backend on GitHub Pages, so "Send Message"
+  // builds a mailto: link from the filled-in fields instead.
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    var subject = 'Speaking Inquiry / Partnership' + (name ? ' — ' + name : '');
+    var body = (message || '') + (email ? '\n\nReply to: ' + email : '');
+
+    var mailtoLink = 'mailto:mahamspeaks@gmail.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+  });
+</script>
 
 
 </body>

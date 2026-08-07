@@ -4,24 +4,22 @@
 ========================== */
 
 :root {
-    --primary: #1C1C1C;        /* Deep charcoal */
-    --secondary: #2E2A24;      /* Warm dark brown */
-    --accent: #C9A227;         /* Elegant gold */
-    --cream: #F8F3EA;          /* Book paper */
+    --primary: #1C1C1C;
+    --secondary: #2E2A24;
+    --accent: #C9A227;
+    --cream: #F8F3EA;
     --black: #000000;
     --text: #333333;
     --muted: #777777;
 }
 
-
-/* Global Styling */
+/* Global */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: "Georgia", "Times New Roman", serif;
@@ -30,299 +28,53 @@ body {
     line-height: 1.6;
 }
 
-
 /* Navigation */
 
-.navbar {
+header {
     background: var(--primary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 60px;
 }
 
+.logo img {
+    height: 60px;
+}
 
-.navbar a {
-    color: var(--black);
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--cream);
     text-decoration: none;
     font-size: 17px;
     transition: 0.3s;
 }
 
-
-.navbar a:hover {
+.nav-links a:hover {
     color: var(--accent);
 }
-
 
 /* Hero Section */
 
 .hero {
     background:
-    linear-gradient(
-        rgba(28,28,28,0.75),
-        rgba(28,28,28,0.75)
-    ),
-    url("author-background.jpg");
-
+        linear-gradient(rgba(28,28,28,0.75), rgba(28,28,28,0.75)),
+        url("author-background.jpg");
     background-size: cover;
     background-position: center;
-
     min-height: 90vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    color: white;
 }
 
-
-.hero h1 {
-    font-size:70px;
-    letter-spacing:2px;
-}
-
-
-.hero p {
-    font-size:22px;
-    margin-top:20px;
-    color:#eee;
-}
-
-
-/* Buttons */
-
-.btn {
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    padding:14px 35px;
-
-    background:var(--accent);
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:4px;
-
-    font-size:18px;
-
-    transition:0.3s;
-}
-
-
-.btn:hover {
-
-    background:#a9851d;
-
-}
-
-
-/* Sections */
-
-section {
-
-    padding:80px 10%;
-
-}
-
-
-.section-title {
-
-    text-align:center;
-
-    font-size:42px;
-
-    color:var(--primary);
-
-    margin-bottom:40px;
-
-}
-
-
-.section-title::after {
-
-    content:"";
-
-    display:block;
-
-    width:70px;
-
-    height:3px;
-
-    background:var(--accent);
-
-    margin:15px auto;
-
-}
-
-
-/* About Author */
-
-.about {
-
-    background:black;
-
-}
-
-
-.about p {
-
-    max-width:900px;
-
-    margin:auto;
-
-    font-size:20px;
-
-    text-align:center;
-
-}
-
-
-/* Books Section */
-
-.books {
-
-    background:var(--cream);
-
-}
-
-
-.book-card {
-
-    background:black;
-
-    padding:30px;
-
-    border-radius:10px;
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,0.08);
-
-    transition:0.3s;
-
-}
-
-
-.book-card:hover {
-
-    transform:translateY(-10px);
-
-}
-
-
-.book-card h3 {
-
-    color:var(--primary);
-
-}
-
-
-.book-card span {
-
-    color:var(--accent);
-
-}
-
-
-/* Quote Section */
-
-.quote {
-
-    background:var(--secondary);
-
-    color:white;
-
-    text-align:center;
-
-    padding:100px 15%;
-
-}
-
-
-.quote h2 {
-
-    font-size:40px;
-
-    font-style:italic;
-
-}
-
-
-.quote p {
-
-    color:#ddd;
-
-    margin-top:20px;
-
-}
-
-
-/* Contact Section */
-
-.contact {
-
-    background:black;
-
-}
-
-
-.contact a {
-
-    color:var(--accent);
-
-    text-decoration:none;
-
-}
-
-
-/* Footer */
-
-footer {
-
-    background:var(--primary);
-
-    color:white;
-
-    text-align:center;
-
-    padding:30px;
-
-}
-
-
-footer span {
-
-    color:var(--accent);
-
-}
-
-
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.hero h1 {
-
-    font-size:42px;
-
-}
-
-
-section {
-
-    padding:50px 5%;
-
-}
-
-
-.navbar {
-
-    padding:20px;
-
-}
-
-}
+.hero

@@ -1,16 +1,15 @@
 /* ==========================
-   MAHAM KHALID AUTHOR WEBSITE
-   Premium Literary Theme
+   MAHAM KHALID — AUTHOR WEBSITE
+   Premium Literary Theme (Vibrant Edition)
 ========================== */
 
 :root {
-    --primary: #1C1C1C;
-    --secondary: #2E2A24;
-    --accent: #C9A227;
-    --cream: #F8F3EA;
-    --black: #000000;
-    --text: #333333;
-    --muted: #777777;
+    --primary: #0D0D0D;          /* Deep ink black */
+    --secondary: #2C1F4A;        /* Rich violet */
+    --accent: #D4A017;           /* Warm gold */
+    --cream: #FAF7F2;            /* Soft parchment */
+    --text: #2B2B2B;             /* Deep graphite */
+    --muted: #6F6F6F;            /* Soft grey */
 }
 
 /* Global */
@@ -25,35 +24,37 @@ body {
     font-family: "Georgia", "Times New Roman", serif;
     background: var(--cream);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 /* Navigation */
 
 header {
     background: var(--primary);
+    border-bottom: 2px solid var(--accent);
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 22px 60px;
 }
 
 .logo img {
-    height: 60px;
+    height: 65px;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .nav-links a {
     color: var(--cream);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
@@ -65,11 +66,11 @@ nav {
 
 .hero {
     background:
-        linear-gradient(rgba(28,28,28,0.75), rgba(28,28,28,0.75)),
+        linear-gradient(120deg, rgba(12,12,12,0.85), rgba(44,31,74,0.85)),
         url("author-background.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 90vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,4 +78,233 @@ nav {
     color: white;
 }
 
-.hero
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 78px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 38px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-right: 12px;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: #b78a12;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid var(--accent);
+}
+
+.btn.secondary:hover {
+    background: var(--accent);
+}
+
+/* Hero Profile Image */
+
+.profile img {
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+/* Sections */
+
+section {
+    padding: 90px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 46px;
+    color: var(--primary);
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 18px auto;
+}
+
+/* About */
+
+#about p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+/* Experience Timeline */
+
+.timeline {
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline-item {
+    background: white;
+    padding: 30px;
+    border-left: 6px solid var(--accent);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateY(-6px);
+}
+
+.timeline-item h3 {
+    color: var(--secondary);
+    font-size: 24px;
+}
+
+.timeline-item span {
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* Expertise Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: var(--secondary);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/* RevoHub */
+
+.revohub-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.revohub-box img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.revohub-box p {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Speaking Topics */
+
+.topics ul {
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.topics li {
+    background: white;
+    padding: 18px 22px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent);
+    font-size: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Contact */
+
+#contact {
+    padding: 0;
+}
+
+/* Footer */
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile */
+
+@media(max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .profile img {
+        margin-top: 40px;
+        width: 260px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+}

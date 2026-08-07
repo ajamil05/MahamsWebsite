@@ -23,6 +23,7 @@ body{
 
 h1,h2,h3,.logo{
     font-family:'Poppins',sans-serif;
+    color:var(--primary);
 }
 
 a{text-decoration:none;color:inherit}
@@ -50,8 +51,8 @@ header{
 
 .logo{
     font-size:1.5rem;
-    color:var(--accent);
     font-weight:800;
+    color:var(--accent);
 }
 
 .nav-links{
@@ -146,7 +147,6 @@ section h2{
     color:var(--accent);
     margin-bottom:24px;
     position:relative;
-    text-shadow:0 0 8px rgba(255,255,255,.35);
 }
 
 section h2:after{
@@ -157,7 +157,6 @@ section h2:after{
     background:var(--accent);
     margin-top:10px;
     border-radius:2px;
-    box-shadow:0 0 10px rgba(255,255,255,.6);
 }
 
 section p{
@@ -209,7 +208,6 @@ section p{
 .card h3{
     color:var(--primary);
     margin-bottom:10px;
-    text-shadow:0 0 8px rgba(255,255,255,.25);
 }
 
 /* REVOHUB BOX */
@@ -291,30 +289,4 @@ footer{
         width:260px;
         height:260px;
     }
-}
-
-/* GLOW EFFECTS — NOW GREY/WHITE INSTEAD OF GREEN */
-
-body{color:var(--accent);}
-h1,h2,h3,.logo{
-    color:var(--primary) !important;
-    text-shadow:0 0 8px rgba(255,255,255,.35),0 0 20px rgba(255,255,255,.25);
-}
-
-p,li,span,a{
-    color:var(--muted) !important;
-}
-
-nav a:hover,.timeline-item span{
-    color:var(--accent) !important;
-}
-
-section h2:after{
-    background:var(--accent) !important;
-    box-shadow:0 0 10px rgba(255,255,255,.6);
-}
-
-.btn,.contact-links a{
-    color:#050505 !important;
-    font-weight:700;
 }

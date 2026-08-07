@@ -96,13 +96,10 @@ header{
 }
 
 .profile img{
-    width:340px;
-    height:340px;
-    border-radius:50%;
-    object-fit:cover;
-    border:8px solid rgba(255,255,255,.2);
-    margin:auto;
-    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    width: min(293px, 40vw);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* BUTTONS */

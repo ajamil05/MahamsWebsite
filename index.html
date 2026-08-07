@@ -11,7 +11,7 @@
 <body>
 
 <header>
-    <nav>
+    <nav class="navbar">
         <div class="logo">
             <img src="revohubinc_logo.jpg" alt="RevoHub Logo">
         </div>
@@ -30,10 +30,10 @@
 <section class="hero">
 
     <div class="hero-content">
-        <h1>Maham Khalid</h1>
+        <h1 class="hero-title">Maham Khalid</h1>
 
-        <p>
-            Helping people and organizations navigate the future being rewritten by artificial intelligence —
+        <p class="hero-subtitle">
+            Author, speaker, and educator helping people navigate the future being rewritten by artificial intelligence —
             with clarity, not hype.
         </p>
 
@@ -55,16 +55,15 @@
 
     <p>
         Maham Khalid is an author, speaker, and educator working at the intersection of human behavior,
-        leadership, and the future being rewritten by artificial intelligence. An award‑winning voice in
-        leadership, innovation, and community impact, she helps individuals and organizations navigate
-        accelerating change, shifting skill demands, and the expanding role of AI in how we live and work.
+        leadership, and the future being reshaped by artificial intelligence. Her work helps individuals and
+        organizations navigate accelerating change, shifting skill demands, and the expanding role of AI in
+        how we live and work.
     </p>
 
     <p>
-        Her gift is translation — taking what feels overwhelming and making it usable, closing the gap
-        between what people learn and what they actually do with it. Whether in a classroom, boardroom,
-        or on stage, she builds the same kind of space: one where comfortable assumptions don't survive
-        long, and people are challenged to think more honestly about the lives they're building.
+        Her gift is translation — taking what feels overwhelming and making it usable. Whether in a classroom,
+        boardroom, or on stage, she builds spaces where comfortable assumptions don’t survive long, and people
+        are challenged to think more honestly about the lives they’re building.
     </p>
 </section>
 
@@ -78,8 +77,8 @@
             <h3>Founder & CEO — RevoHub</h3>
             <span>Present</span>
             <p>
-                Leading the development of workforce intelligence solutions that help organisations
-                understand skills, talent, and future workforce requirements.
+                Leading the development of workforce intelligence solutions that help organisations understand
+                skills, talent, and future workforce requirements.
             </p>
         </div>
 
@@ -93,8 +92,7 @@
         <div class="timeline-item">
             <h3>Workforce & Technology Leadership</h3>
             <p>
-                Experience across workforce development, technology transformation, education,
-                and innovation ecosystems.
+                Experience across workforce development, technology transformation, education, and innovation ecosystems.
             </p>
         </div>
 
@@ -176,28 +174,6 @@
 <footer>
     <p>© 2026 Maham Khalid</p>
 </footer>
-
-
-<script src="script.js"></script>
-
-<script>
-  document.getElementById('contact-form')?.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var message = document.getElementById('message').value.trim();
-
-    var subject = 'Speaking Inquiry / Partnership' + (name ? ' — ' + name : '');
-    var body = (message || '') + (email ? '\n\nReply to: ' + email : '');
-
-    var mailtoLink = 'mailto:mahamspeaks@gmail.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
-
-    window.location.href = mailtoLink;
-  });
-</script>
 
 </body>
 </html>

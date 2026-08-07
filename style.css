@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 
 :root{
---primary:#0B1F3A;
---secondary:#00B3A4;
---accent:#5BCB8E;
---bg:#F8FAFC;
---surface:#FFFFFF;
---text:#1E293B;
---muted:#64748B;
+--primary:#050505;
+--secondary:#00C853;
+--accent:#69F0AE;
+--bg:#0D0D0D;
+--surface:#151515;
+--text:#F5F5F5;
+--muted:#B0B0B0;
 --shadow:0 12px 32px rgba(2,6,23,.08);
 }
 
@@ -25,7 +25,7 @@ img{max-width:100%;display:block}
 
 header{
 position:sticky;top:0;z-index:1000;
-background:rgba(255,255,255,.9);
+background:rgba(10,10,10,.92);
 backdrop-filter:blur(10px);
 box-shadow:var(--shadow);
 }
@@ -169,3 +169,7 @@ nav{flex-direction:column;gap:18px}
 nav ul{flex-wrap:wrap;justify-content:center}
 .profile img{width:260px;height:260px}
 }
+
+
+.card,.revohub-box,.timeline-item,.topics li{border:1px solid rgba(0,200,83,.25)}
+.btn,.contact-links a{box-shadow:0 0 20px rgba(0,200,83,.25)}

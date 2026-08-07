@@ -1,473 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Let's Connect Preview</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 
-    <title>Maham Khalid | Founder & Workforce Intelligence Strategist</title>
+:root{
+  --bg:#0D0D0D;
+  --surface:#151515;
+  --primary:#00FF7F;
+  --secondary:#00C853;
+  --accent:#69F0AE;
+  --text:#7CFFB2;
+  --muted:#7CFFB2aa;
+  --glow:0 0 8px rgba(0,255,127,.35),0 0 20px rgba(0,200,83,.25);
+}
 
-    <link rel="stylesheet" href="style.css">
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+#contact{
+  max-width:1200px;
+  margin:auto;
+  padding:100px 24px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+}
+
+#contact h2{
+  font-family:'Poppins',sans-serif;
+  font-size:2.8rem;
+  color:#fff;
+}
+#contact h2 em{
+  font-style:italic;
+  color:var(--primary);
+  text-shadow:var(--glow);
+}
+
+#contact > div:first-child p{
+  margin:24px 0 32px;
+  color:var(--muted);
+  font-size:1.05rem;
+  max-width:420px;
+}
+#contact > div:first-child p a{
+  color:var(--primary);
+  text-decoration:underline;
+}
+
+.connect-links{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.connect-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:14px 22px;
+  border-radius:999px;
+  border:1px solid rgba(0,200,83,.35);
+  background:var(--surface);
+  color:var(--primary);
+  font-weight:700;
+  font-size:.8rem;
+  letter-spacing:.05em;
+  text-decoration:none;
+  transition:.25s;
+  box-shadow:0 0 20px rgba(0,200,83,.15);
+}
+.connect-links a:hover{
+  background:var(--secondary);
+  color:#050505;
+  transform:translateY(-2px);
+}
+.connect-links svg{width:16px;height:16px;stroke:currentColor}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+}
+label{
+  display:block;
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  color:var(--accent);
+  margin-bottom:8px;
+  text-transform:uppercase;
+}
+input, textarea{
+  width:100%;
+  background:transparent;
+  border:none;
+  border-bottom:1px solid rgba(124,255,178,.25);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  font-size:1rem;
+  padding:8px 2px;
+  outline:none;
+  transition:.25s;
+}
+textarea{
+  border:1px solid rgba(124,255,178,.25);
+  border-radius:12px;
+  padding:14px;
+  min-height:110px;
+  resize:vertical;
+  background:var(--surface);
+}
+input::placeholder, textarea::placeholder{
+  color:rgba(124,255,178,.4);
+}
+input:focus, textarea:focus{
+  border-color:var(--primary);
+}
+
+.send-btn{
+  margin-top:8px;
+  padding:16px;
+  border:none;
+  border-radius:999px;
+  background:linear-gradient(135deg,var(--secondary),var(--accent));
+  color:#050505;
+  font-weight:800;
+  letter-spacing:.05em;
+  font-size:.9rem;
+  cursor:pointer;
+  box-shadow:0 0 25px rgba(0,200,83,.35);
+  transition:.25s;
+}
+.send-btn:hover{transform:translateY(-2px)}
+
+.fallback{
+  font-size:.85rem;
+  color:var(--muted);
+}
+.fallback a{color:var(--primary);text-decoration:underline}
+
+@media(max-width:800px){
+  #contact{grid-template-columns:1fr}
+}
+</style>
 </head>
-
-
 <body>
 
-
-<header>
-
-<nav>
-
-<div class="logo">
-    <img src="revohubinc_logo.jpg" alt="Profile">
-</div>
-
-
-<ul>
-
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#expertise">Expertise</a></li>
-<li><a href="#revohub">RevoHub</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-
-</nav>
-
-</header>
-
-
-
-
-<section class="hero">
-
-
-<div class="hero-content">
-
-
-<h1>
-Building the Future of Work Through AI & Workforce Intelligence
-</h1>
-
-
-<p>
-
-Founder of RevoHub | Workforce Intelligence Strategist |
-AI Transformation Leader
-
-</p>
-
-
-<div class="buttons">
-
-<a href="#contact" class="btn">
-Connect
-</a>
-
-
-<a href="#revohub" class="btn secondary">
-Explore RevoHub
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="profile">
-
-<img src="MahamKhalidpf.png" alt="Maham Khalid">
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section id="about">
-
-
-<h2>About Maham Khalid</h2>
-
-
-<p>
-
-Maham Khalid is the Founder of RevoHub, a workforce intelligence
-platform focused on helping organisations prepare for the future
-of work through AI, skills transformation and human-centred innovation.
-
-</p>
-
-
-<p>
-
-Her work focuses on connecting technology, workforce strategy,
-and inclusive innovation to help businesses and individuals
-navigate rapid changes in the global economy.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section id="experience">
-
-
-<h2>Experience</h2>
-
-
-<div class="timeline">
-
-
-<div class="timeline-item">
-
-<h3>
-Founder & CEO — RevoHub
-</h3>
-
-<span>
-Present
-</span>
-
-
-<p>
-
-Leading the development of workforce intelligence solutions
-that help organisations understand skills, talent,
-and future workforce requirements.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="timeline-item">
-
-
-<h3>
-Vice President — CIPS Ontario
-</h3>
-
-
-<p>
-
-Supporting technology professionals, ethical technology adoption,
-and digital transformation initiatives.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="timeline-item">
-
-
-<h3>
-Workforce & Technology Leadership
-</h3>
-
-
-<p>
-
-Experience across workforce development,
-technology transformation, education,
-and innovation ecosystems.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="expertise">
-
-
-<h2>
-Areas of Expertise
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Artificial Intelligence
-</h3>
-
-<p>
-Helping organisations adopt AI responsibly
-and effectively.
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-Workforce Intelligence
-</h3>
-
-<p>
-Using data and insights to understand
-skills, talent and opportunities.
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-Future of Work
-</h3>
-
-<p>
-Preparing businesses and people
-for workforce transformation.
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-Inclusive Innovation
-</h3>
-
-<p>
-Building accessible technology
-and workforce ecosystems.
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="revohub">
-
-
-<h2>
-RevoHub
-</h2>
-
-
-<div class="revohub-box">
-
-
-<img src="revohubinc_logo.jpg"
-alt="RevoHub Logo">
-
-
-<p>
-
-RevoHub is a workforce intelligence platform
-designed to bridge the gap between skills,
-talent and industry needs.
-
-</p>
-
-
-<p>
-
-By combining AI, workforce analytics and
-human expertise, RevoHub helps organisations
-build future-ready teams.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section class="topics">
-
-
-<h2>
-Speaking Topics
-</h2>
-
-
-
-<ul>
-
-<li>
-The Workforce Intelligence Revolution
-</li>
-
-
-<li>
-AI and the Future of Talent
-</li>
-
-
-<li>
-Closing the Global Skills Gap
-</li>
-
-
-<li>
-Building Inclusive Innovation Ecosystems
-</li>
-
-
-<li>
-Preparing Organisations for AI Transformation
-</li>
-
-
-</ul>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
 <section id="contact">
+  <div>
+    <h2>Let's <em>Connect</em></h2>
+    <p>Interested in workforce intelligence, AI transformation, or
+       future-ready organisations? Submitting this form drafts an email
+       to <a href="mailto:hello@revohub.ca">hello@revohub.ca</a>.</p>
+    <div class="connect-links">
+      <a href="mailto:hello@revohub.ca">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        EMAIL
+      </a>
+      <a href="#" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 3h5v5"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>
+        LINKEDIN
+      </a>
+      <a href="#" target="_blank">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 3h5v5"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg>
+        REVOHUB
+      </a>
+    </div>
+  </div>
 
-
-<h2>
-Let's Connect
-</h2>
-
-
-<p>
-
-Interested in workforce intelligence,
-AI transformation, or future-ready organisations?
-
-</p>
-
-
-
-<div class="contact-links">
-
-
-<a href="#">
-LinkedIn
-</a>
-
-
-<a href="#">
-RevoHub
-</a>
-
-
-<a href="#">
-Email
-</a>
-
-
-</div>
-
-
+  <form>
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Your name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="Your email address">
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Tell me a little about your event / partnership / request"></textarea>
+    </div>
+    <button type="submit" class="send-btn">SEND MESSAGE</button>
+    <p class="fallback">Prefer direct email? <a href="mailto:hello@revohub.ca">Open your email composer</a>.</p>
+  </form>
 </section>
-
-
-
-
-
-
-
-
-<footer>
-
-
-<p>
-
-© 2026 Maham Khalid
-
-</p>
-
-
-</footer>
-
-
-
-<script src="script.js"></script>
-
 
 </body>
-
 </html>

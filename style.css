@@ -8,7 +8,7 @@
     --secondary: #2E2A24;      /* Warm dark brown */
     --accent: #C9A227;         /* Elegant gold */
     --cream: #F8F3EA;          /* Book paper */
-    --white: #FFFFFF;
+    --black: #000000;
     --text: #333333;
     --muted: #777777;
 }
@@ -40,7 +40,7 @@ body {
 
 
 .navbar a {
-    color: var(--white);
+    color: var(--black);
     text-decoration: none;
     font-size: 17px;
     transition: 0.3s;
@@ -72,7 +72,7 @@ body {
     justify-content:center;
 
     text-align:center;
-    color:white;
+    color:black;
 }
 
 
@@ -163,7 +163,7 @@ section {
 
 .about {
 
-    background:white;
+    background:black;
 
 }
 
@@ -192,7 +192,7 @@ section {
 
 .book-card {
 
-    background:white;
+    background:black;
 
     padding:30px;
 
@@ -264,7 +264,7 @@ section {
 
 .contact {
 
-    background:white;
+    background:black;
 
 }
 

@@ -189,6 +189,17 @@ section p{
     border:1px solid rgba(255,255,255,.15);
 }
 
+.book-box{
+    background: var(--surface);
+    padding: 24px 35px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+    border: 1px solid rgba(255,255,255,.15);
+    width: 105%;
+    box-sizing: border-box;
+}
+
 .timeline-item span{
     color:var(--accent);
     font-weight:700;

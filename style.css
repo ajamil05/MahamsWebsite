@@ -96,9 +96,7 @@ header{
 }
 .hero-section {
     position: relative;
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("peoplearestupid.png");
+    background-image: url("peoplearestupid.png");
 
     background-size: cover;
     background-position: center;

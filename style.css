@@ -209,18 +209,40 @@ section p{
 
 /* REVOHUB BOX */
 
-.revohub-box{
-    background:var(--surface);
-    border-radius:18px;
-    padding:30px;
-    box-shadow:var(--shadow);
-    transition:.25s;
-    border:1px solid rgba(255,255,255,.15);
-    text-align:center;
+.revohub-box {
+    min-height: 315px;
+    padding: 40px 50px;
+    border: 1px solid #3a3a3a;
+    border-radius: 18px;
+    background: #151515;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    box-sizing: border-box;
 }
 
-.revohub-box:hover{
-    transform:translateY(-6px);
+.revohub-box p {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+
+    color: #b9c8d8;
+    font-size: 17px;
+    line-height: 1.65;
+    font-weight: 400;
+    order: 1;
+}
+
+.revohub-box img {
+    width: 260px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    order: 2;
 }
 
 /* TOPICS */

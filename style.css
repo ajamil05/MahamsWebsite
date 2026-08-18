@@ -41,12 +41,12 @@ header{
 }
 
 .navbar{
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 18px;
+    padding: 10px 16px;
 }
 
 .logo{

@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      const recipient = "your-email@outlook.com";
+      const subject = encodeURIComponent("New Contact Form Message");
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n\n` +
+        `Message:\n${message}`
+    );
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+});
+  </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 

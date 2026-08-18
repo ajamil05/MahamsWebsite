@@ -94,6 +94,15 @@ header{
     font-size:1.15rem;
     opacity:.95;
 }
+.hero-section {
+    background-image: url("peoplearestupid.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 100px 40px;
+    min-height: 400px;
+}
 
 .profile img{
     width: 200px;          /* adjust to whatever size you need */

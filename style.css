@@ -96,11 +96,6 @@ header{
 }
 .hero-section {
     position: relative;
-
-    width: 100%;
-    max-width: none;
-    min-height: 700px;
-
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("peoplearestupid.png");
@@ -109,10 +104,8 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 140px 100px;
-
-    box-sizing: border-box;
-    margin: 0;
+    padding: 100px 40px;
+    min-height: 400px;
 }
 .profile img{
     width: 200px;          /* adjust to whatever size you need */

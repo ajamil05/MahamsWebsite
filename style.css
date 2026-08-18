@@ -230,7 +230,7 @@ section p{
     margin: 0;
     text-align: left;
 
-    color: #808080;
+    color: --muted;
     font-size: 17px;
     line-height: 1.65;
     font-weight: 400;

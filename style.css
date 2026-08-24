@@ -115,12 +115,6 @@ header{
 }
 
 /* BUTTONS */
-
-.buttons{
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
-}
 .work-btn {
     display: inline-flex;
     align-items: center;
@@ -146,29 +140,6 @@ header{
     background: #e7f77d;
     transform: translateY(-2px);
 }
-
-.btn{
-    margin-top: 20px;
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:999px;
-    background:linear-gradient(135deg,#444,#777);
-    color:#050505;
-    font-weight:700;
-    transition:.25s;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-}
-
-.btn:hover{
-    transform:translateY(-3px);
-}
-
-.btn.secondary{
-    background:#ffffff22;
-    border:1px solid #ffffff55;
-    color:#fff;
-}
-
 /* SECTIONS */
 
 section{

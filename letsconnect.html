@@ -486,51 +486,24 @@ footer{
 
 
     <!-- RIGHT SIDE - FORM -->
-    <form>
+   <form id="contactForm">
 
-      <div>
-        <label for="name">Name</label>
-        <input
-          id="name"
-          name="name"
-          type="text"
-          placeholder="Your name"
-        >
-      </div>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your name" required>
 
-      <div>
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Your email address"
-        >
-      </div>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your email address" required>
 
-      <div>
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Tell me a little about your event / partnership / request"
-        ></textarea>
-      </div>
+    <label for="message">Message</label>
+    <textarea id="message"
+        placeholder="Tell me a little about your event / partnership / request"
+        required></textarea>
 
-      <button type="submit" class="work-btn">
+    <button type="submit" class="send-btn">
         SEND MESSAGE
-      </button>
-
-      <p class="fallback">
-        Prefer direct email?
-        <a href="mailto:mahamspeaks@gmail.com?subject=Speaking%20Inquiry%20%2F%20Partnership">
-          Open your email composer
-        </a>.
-      </p>
-
-    </form>
-
-  </section>
+    </button>
+   </form>
+ </section>
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();

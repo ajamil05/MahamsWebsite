@@ -403,4 +403,88 @@ footer{
     .close-btn:hover {
         color: #000;
     }
+    /* =========================
+   LOADING SCREEN
+========================= */
+
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#loading-screen.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.loader-content {
+    text-align: center;
+    color: white;
+}
+
+.loader-logo {
+    width: 65px;
+    height: 65px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    animation: pulse 1.5s infinite;
+}
+
+.loader-line {
+    width: 0;
+    height: 2px;
+    background: white;
+    margin: 0 auto 15px;
+
+    animation: loadingLine 1.5s ease forwards;
+}
+
+.loader-content p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+/* Logo animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
     }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.7;
+    }
+}
+
+/* Loading line */
+@keyframes loadingLine {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 150px;
+    }
+}
+}
+

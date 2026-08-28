@@ -512,33 +512,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Your email address
     const recipient = "mahamspeaks@gmail.com";
 
-    // Email subject
-    const subject = "New Speaking Enquiry - " + name;
+    const subject = "Speaking Enquiry";
 
-    // Professional email format
     const body =
-        "NEW SPEAKING ENQUIRY\n" +
-        "====================\n\n" +
-
         "Hello,\n\n" +
-        "You have received a new speaking enquiry through your website.\n\n" +
-
-        "CONTACT DETAILS\n" +
-        "----------------\n" +
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n\n" +
-
-        "ENQUIRY\n" +
-        "-------\n" +
+        "My name is " + name + " and I am getting in touch regarding a speaking enquiry.\n\n" +
         message + "\n\n" +
-
+        "You can contact me at " + email + " if you need any further information.\n\n" +
         "Kind regards,\n" +
-        "Website Contact Form";
+        name;
 
-    // Open Outlook/email composer
     window.location.href =
         "mailto:" + recipient +
         "?subject=" + encodeURIComponent(subject) +

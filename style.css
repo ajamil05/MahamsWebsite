@@ -403,21 +403,32 @@ footer{
     .close-btn:hover {
         color: #000;
     }
-    /* =========================
-   LOADING SCREEN
-========================= */
+    /* ==============================
+   MAHAM SPEAKS LOADING SCREEN
+================================ */
 
 #loading-screen {
     position: fixed;
-    inset: 0;
-    background: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: #0d0d0d;
+    color: #fff;
+
+    z-index: 999999;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 99999;
+    justify-content: center;
+
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.8s ease, visibility 0.8s ease;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
 }
 
 #loading-screen.loaded {
@@ -426,65 +437,147 @@ footer{
     pointer-events: none;
 }
 
-.loader-content {
+
+/* CENTER CONTENT */
+
+.loading-center {
     text-align: center;
-    color: white;
+    margin-top: -20px;
 }
 
-.loader-logo {
-    width: 65px;
-    height: 65px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px;
+.loading-small {
+    font-family: Arial, sans-serif;
 
-    font-size: 28px;
+    font-size: 10px;
     font-weight: 600;
 
-    animation: pulse 1.5s infinite;
+    color: #888;
+
+    margin-bottom: 28px;
 }
 
-.loader-line {
-    width: 0;
-    height: 2px;
-    background: white;
-    margin: 0 auto 15px;
 
-    animation: loadingLine 1.5s ease forwards;
+/* MAIN TITLE */
+
+.loading-title {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 4.5vw, 72px);
+
+    line-height: 1.02;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    color: #f5f5f5;
 }
 
-.loader-content p {
-    margin: 0;
-    font-size: 12px;
-    letter-spacing: 4px;
-    opacity: 0.8;
+.loading-title em {
+    color: #f0ff9a;
+
+    font-style: italic;
 }
 
-/* Logo animation */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 1;
+
+/* BOTTOM LEFT */
+
+.loading-status {
+    position: absolute;
+
+    left: 36px;
+    bottom: 32px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #999;
+
+    letter-spacing: 0.1px;
+}
+
+
+/* BOTTOM RIGHT */
+
+.loading-percentage {
+    position: absolute;
+
+    right: 36px;
+    bottom: 28px;
+
+    text-align: right;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+
+    font-weight: 400;
+
+    color: #eee;
+}
+
+.loading-percentage small {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    margin-left: 2px;
+
+    color: #aaa;
+}
+
+
+/* PROGRESS LINE */
+
+.loading-progress {
+    width: 80px;
+    height: 1px;
+
+    background: #333;
+
+    margin-top: 10px;
+
+    margin-left: auto;
+
+    overflow: hidden;
+}
+
+#loading-bar {
+    width: 0%;
+    height: 100%;
+
+    background: #fff;
+
+    transition: width 0.1s linear;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .loading-title {
+        font-size: 42px;
+        letter-spacing: -1.5px;
     }
 
-    50% {
-        transform: scale(1.08);
-        opacity: 0.7;
-    }
-}
-
-/* Loading line */
-@keyframes loadingLine {
-    from {
-        width: 0;
+    .loading-status {
+        left: 20px;
+        bottom: 25px;
+        font-size: 12px;
     }
 
-    to {
-        width: 150px;
+    .loading-percentage {
+        right: 20px;
+        bottom: 22px;
+        font-size: 42px;
+    }
+
+    .loading-progress {
+        width: 65px;
     }
 }
+    
 }
 

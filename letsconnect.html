@@ -535,24 +535,24 @@ footer{
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    // Get the information entered by the user
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Your email address
+    // YOUR EMAIL ADDRESS
     const recipient = "mahamspeaks@gmail.com";
 
-    // Email subject
-    const subject = "Website Contact Form - " + name;
+    // Subject
+    const subject = "Website Enquiry from " + name;
 
-    // Email body
+    // Automatically put the form information into the email
     const body =
         "Name: " + name + "\n" +
         "Email: " + email + "\n\n" +
-        "Message:\n" + message;
+        "Message:\n" +
+        message;
 
-    // Open the user's email composer
+    // Open Outlook/email composer
     window.location.href =
         "mailto:" + recipient +
         "?subject=" + encodeURIComponent(subject) +

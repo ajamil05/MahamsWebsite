@@ -531,6 +531,33 @@ footer{
     </form>
 
   </section>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
+    // Get the information entered by the user
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Your email address
+    const recipient = "youremail@example.com";
+
+    // Email subject
+    const subject = "Website Contact Form - " + name;
+
+    // Email body
+    const body =
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message;
+
+    // Open the user's email composer
+    window.location.href =
+        "mailto:" + recipient +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+});
+</script>
 </body>
 </html>

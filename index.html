@@ -11,10 +11,25 @@
 <body>
 <!-- Loading Screen -->
 <div id="loading-screen">
-    <div class="loader-content">
-        <div class="loader-logo">M</div>
-        <div class="loader-line"></div>
-        <p>MAHAM KHALID</p>
+    <div class="loading-center">
+        <div class="loading-small">MAHAM SPEAKS</div>
+
+        <div class="loading-title">
+            Clarity over <em>hype</em><br>
+            for the future of work
+        </div>
+    </div>
+
+    <div class="loading-status">
+        Loading – settling in.
+    </div>
+
+    <div class="loading-percentage">
+        <span id="loading-number">0</span><small>%</small>
+
+        <div class="loading-progress">
+            <div id="loading-bar"></div>
+        </div>
     </div>
 </div>
 <header>
@@ -208,14 +223,29 @@
 <footer>
     <p>© 2026 Maham Khalid</p>
 </footer>
-<script>
-window.addEventListener("load", function () {
-    const loadingScreen = document.getElementById("loading-screen");
-
-    setTimeout(() => {
-        loadingScreen.classList.add("loaded");
-    }, 500);
-});
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const loadingScreen = document.getElementById("loading-screen");
+                const loadingNumber = document.getElementById("loading-number");
+                const loadingBar = document.getElementById("loading-bar");
+            
+                let progress = 0;
+            
+                const loading = setInterval(function () {
+            
+                    progress++;
+                    loadingNumber.textContent = progress;
+                    loadingBar.style.width = progress + "%";
+            
+                    if (progress >= 100) {
+            
+                        clearInterval(loading);
+                        setTimeout(function () {
+                            loadingScreen.classList.add("loaded");
+                        }, 300);
+                    }
+                }, 20);
+            });
 </script>
 </body>
 </html>

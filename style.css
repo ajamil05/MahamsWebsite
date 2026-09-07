@@ -189,11 +189,6 @@ header {
 
     transition: 0.25s ease;
 }
-
-.work-btn:hover {
-    background: #e7f77d;
-    transform: translateY(-2px);
-}
 /* =========================================================
    SECTIONS
 ========================================================= */

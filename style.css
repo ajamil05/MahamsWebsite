@@ -152,13 +152,13 @@ header {
 
     min-height: 400px;
 }
-
-.profile img {
+.profile {
     width: 200px;
-    height: 200px;
-
-    border-radius: 50%;
-    overflow: hidden;
+}
+.profile img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 

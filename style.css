@@ -153,11 +153,11 @@ header {
     min-height: 400px;
 }
 .profile {
-    width: 412px;
+    width: 384px;
 }
 .profile img {
     width: 100%;
-    height: 484px;
+    height: 500px;
     display: block;
 }
 

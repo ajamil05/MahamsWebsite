@@ -352,6 +352,7 @@ section p {
 
 .topics ul {
     list-style: none;
+   margin-bottom: 20px;
 }
 
 .topics li {
@@ -360,6 +361,8 @@ section p {
     padding: 16px 20px;
 
     margin: 12px 0;
+
+    margin-bottom: 20px;
 
     border-left: 5px solid var(--accent);
 
@@ -374,13 +377,8 @@ section p {
     width: 100%;
     max-width: 900px;
     margin-top: 30px;
-    margin-bottom: 20px;
     border-radius: 15px;
     display: block;
-}
-.speaking-topic button{
-    display: block;
-    margin-bottom: 20px;
 }
 /* =========================================================
    CONTACT

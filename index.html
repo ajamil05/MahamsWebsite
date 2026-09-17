@@ -256,6 +256,16 @@
     <p>© 2026 Maham Khalid</p>
 </footer>
     <script>
+        function showImage(imageName) {
+            const container = document.getElementById("image-container");
+            container.innerHTML = `
+            <img src="${imageName}" 
+            alt="Speaking Topic Image"
+            class="topic-image">
+            `;
+        }
+    </script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
 
         const loadingScreen =

@@ -159,6 +159,123 @@ header {
     display: block;
 }
 
+/* =========================
+   AWARDS & ACHIEVEMENTS
+========================= */
+
+.awards {
+    padding: 80px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.awards h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    letter-spacing: -0.5px;
+}
+
+.awards-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Award Card */
+.award-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+    padding: 18px;
+
+    transition: all 0.3s ease;
+
+    overflow: hidden;
+}
+
+/* Hover effect */
+.award-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Award Image */
+.award-card img {
+    width: 100%;
+    height: 240px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    display: block;
+}
+
+/* Award Title */
+.award-card h3 {
+    margin: 20px 0 8px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Award Description */
+.award-card p {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    opacity: 0.65;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .awards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .awards {
+        padding: 60px 15px;
+    }
+
+    .awards h2 {
+        font-size: 30px;
+    }
+
+    .awards-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .award-card img {
+        height: 220px;
+    }
+
+}
 
 /* =========================================================
    BUTTONS

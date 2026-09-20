@@ -290,6 +290,224 @@ header {
 
 }
 
+/* ================================
+   SPEAKING ENGAGEMENTS
+================================ */
+
+.speaking-engagements {
+    padding: 120px 8%;
+    background: #111111;
+    color: #ffffff;
+}
+
+.speaking-header {
+    max-width: 850px;
+    margin-bottom: 80px;
+}
+
+.section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #8fbc8f;
+    margin-bottom: 20px;
+}
+
+.speaking-header h2 {
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: 0.95;
+    font-weight: 500;
+    margin: 0 0 35px;
+    letter-spacing: -3px;
+}
+
+.speaking-header h2 span {
+    color: #8fbc8f;
+}
+
+.speaking-intro {
+    max-width: 700px;
+    color: #bdbdbd;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   SPEAKING CARDS
+================================ */
+
+.speaking-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.speaking-card {
+    position: relative;
+    min-height: 350px;
+    padding: 45px;
+    background: #181818;
+    border: 1px solid #292929;
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.speaking-card:hover {
+    transform: translateY(-6px);
+    border-color: #8fbc8f;
+}
+
+.speaking-number {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+.speaking-content {
+    max-width: 600px;
+}
+
+.speaking-type {
+    color: #8fbc8f;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.speaking-card h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.speaking-card p {
+    color: #aaa;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.speaking-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.speaking-tags span {
+    padding: 7px 12px;
+    border: 1px solid #383838;
+    border-radius: 50px;
+    font-size: 11px;
+    color: #bdbdbd;
+}
+
+
+/* ================================
+   SPEAKING TOPICS
+================================ */
+
+.speaking-topics {
+    margin-top: 120px;
+    padding-top: 80px;
+    border-top: 1px solid #292929;
+}
+
+.topics-heading h3 {
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0 0 50px;
+}
+
+.topics-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #292929;
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #292929;
+}
+
+.topic-item span {
+    color: #8fbc8f;
+    font-size: 12px;
+}
+
+.topic-item p {
+    margin: 0;
+    font-size: 17px;
+    color: #ddd;
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.speaking-cta {
+    margin-top: 120px;
+    padding: 80px;
+    background: #181818;
+    text-align: center;
+    border: 1px solid #292929;
+}
+
+.speaking-cta h3 {
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: 1;
+    font-weight: 500;
+    margin: 15px 0 25px;
+}
+
+.speaking-cta h3 span {
+    color: #8fbc8f;
+}
+
+.speaking-cta > p:not(.section-label) {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 800px) {
+
+    .speaking-engagements {
+        padding: 80px 6%;
+    }
+
+    .speaking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topics-list {
+        grid-template-columns: 1fr;
+    }
+
+    .speaking-card {
+        padding: 35px;
+    }
+
+    .speaking-cta {
+        padding: 50px 25px;
+    }
+
+}
+
 /* =========================================================
    BUTTONS
 ========================================================= */

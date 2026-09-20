@@ -238,6 +238,19 @@ header {
     opacity: 0.65;
 }
 
+.award-video {
+    width: 100%;
+    height: 240px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.award-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 
 /* =========================
    TABLET

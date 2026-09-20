@@ -187,7 +187,7 @@ header {
 
 /* Award Card */
 .award-card {
-    background: rgba(255, 255, 255, 0.04);
+    background: #3a3a3a;
     border: 1px solid rgba(255, 255, 255, 0.12);
 
     border-radius: 18px;
@@ -351,7 +351,7 @@ section p {
 }
 
 .timeline-item {
-    background: var(--surface);
+    background: #3a3a3a;
 
     padding: 24px;
 
@@ -384,7 +384,7 @@ section p {
 }
 
 .card {
-    background: var(--surface);
+    background: #3a3a3a;
 
     border-radius: 18px;
 
@@ -420,7 +420,7 @@ section p {
 
     border-radius: 18px;
 
-    background: #151515;
+    background: #3a3a3a;
 
     display: flex;
     flex-direction: row;
@@ -471,7 +471,7 @@ section p {
 }
 
 .topics li {
-    background: var(--surface);
+    background: #3a3a3a;
 
     padding: 16px 20px;
 
